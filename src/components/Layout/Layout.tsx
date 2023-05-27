@@ -1,4 +1,3 @@
-import '../styles/globals.css';
 import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
 
@@ -12,8 +11,8 @@ export const metadata = {
 
 export const Layout = ({ children, }: props) => {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <div className={inter.className}>
+      {children}
+    </div>
   )
 };
