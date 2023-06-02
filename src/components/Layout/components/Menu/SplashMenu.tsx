@@ -1,15 +1,12 @@
+import styles from './Menu.module.css';
+import type { TextLinks } from '../../links';
 
-/* Expanding splash menu designed for smaller layout.
-   Links:
-      - home page
-      - gallery
-      - linkedin
-      - github
-      - resume
-      - dark mode
-*/
+type Props = {
+  links: TextLinks
+};
 
-export const SplashMenu = () => {
+/* Expanding splash menu designed for smaller layout. */
+export const SplashMenu = ({ links }: Props) => {
   return (
     <></>
   );

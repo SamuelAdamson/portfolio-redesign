@@ -1,13 +1,13 @@
 import { ReactNode } from 'react';
-import cx from 'classnames';
 
 type Props = {
+  className: string,
   children?: ReactNode,
 };
 
-export const Container = ({ children, }: Props) => {
+export const Container = ({ className, children, }: Props) => {
   return (
-    <div className={cx("container lg")}>
+    <div className={`container lg mx-auto px-4 ${className}`}>
       {children}
     </div>
   );
